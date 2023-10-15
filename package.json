@@ -5,7 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "set DEBUG=true & electron .",
-    "build:windows": "electron-builder --win --dir"
+    "build:windows": "electron-builder --win --dir",
+    "publish:github": "build --win -p always"
+  },
+  "build": {
+    "appId": "com.my.markdown-editor",
+    "publish": {
+      "provider": "github",
+      "owner": "jaimemat17",
+      "repo": "markdown-editor"
+    }
   },
   "keywords": [],
   "author": "",
