@@ -1,12 +1,12 @@
 {
   "name": "markdown-editor",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "set DEBUG=true & electron .",
     "build:windows": "electron-builder --win --dir",
-    "publish:github": "build --win -p always"
+    "publish:github": "electron-builder --win -p always"
   },
   "build": {
     "appId": "com.my.markdown-editor",
